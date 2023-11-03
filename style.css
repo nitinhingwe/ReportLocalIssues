@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 5px;
+    padding: 5px;
+    width: 100%;
+}
+
+.head {
+
+    text-align: center;
+}
+
+.right_align {
+    
+    float: right;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#issues{
+    display:flex;
+}
+.issue{
+    width:300px;
+    height: 250px;
+    margin:10px;
+
+    border: 1px solid black;
+    border-radius: 5px;
+}
+img{
+    border-radius: 5px;
+}
+.i1{
+    margin:5px;
+    width:150px;
+    height:30px;
+    border-radius: 5px;
+    background-color: rgb(13, 248, 13);
+}
+#intro{
+    margin:20px;
+    padding:10px;
+}
+#nav_bar nav{
+    font-size: large;
+}
