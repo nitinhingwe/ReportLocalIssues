@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,6 +6,111 @@
     font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color:rgb(107, 100, 100);
 }
+/* navigation design */
+#nav_bar {
+    background-color: rgba(8, 8, 8, 0.897); /* Background color for the navigation bar */
+    color: #fff; /* Text color for links and buttons */
+    padding: 10px; /* Add padding for spacing */
+}
+#nav_bar a{
+    color:white;
+}
+#logo img {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 16px;
+}
+
+#but button {
+    background-color: #4CAF50; /* Button background color */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+#but button:hover {
+    background-color: #45a049; /* Button background color on hover */
+}
+#nav_bar{
+    padding:0 20px;
+    width:100%;
+    height:80px;
+    display: flex;
+    align-items: center;
+    color:white;
+    font-size: medium;
+}
+#nav_bar a{
+    margin:25px;
+    text-decoration: none;
+    color:white;
+    font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    float:left;
+
+}
+/* Style the sign-in and sign-up links */
+#signin a, #signup a {
+    width:250px;
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: #9bdb34;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  #signin a:hover, #signup a:hover {
+    background-color: #3c3d3d;
+  }
+  
+.section {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.i1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    color: white;
+    background: darkblue;
+    text-decoration: underline;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s;
+    margin:10px;
+}
+
+
+
 
 body {
     margin: 5px;
@@ -33,7 +139,11 @@ body {
 }
 #issues{
     display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
+
 .issue{
     width:300px;
     height: 250px;
@@ -45,84 +155,27 @@ body {
 img{
     border-radius: 5px;
 }
-.i1{
-    margin:5px;
-    width:200px;
-    height:30px;
-    border-radius: 5px;
-   border:2px solid rgb(202, 180, 180);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color:black;
-    font-size: 20px;
-    text-decoration: none;
-}
-.i1 #i1{
 
-}
 #intro{
     margin:20px;
     padding:10px;
-}
-#nav_bar{
-    padding:0 20px;
-    width:100%;
-    height:80px;
-    display: flex;
-    align-items: center;
     color:black;
-    font-size: medium;
 }
-#nav_bar a{
-    margin:25px;
-    text-decoration: none;
-    color:rgb(24, 23, 23);
-    font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
-    float:left;
-
-}
 #but{
     display:flex;
     position: relative;
-    left:65vw;
+    left:55vw;
+   
 
 }
 #nav_bar button{
     width:100px;
     height: 30px;
     border-radius: 5px;
-    background-color: cyan;
+    background-color: rgb(66, 64, 64);
     margin:5px;
-}
-#sign_up{
-    width:400px;
-    height:300px;
-    font-size: 20px;
-    padding :20px;
-display:flex;
-align-items: center;
-text-align: center;
-justify-content: center;
-position:absolute;
-top:30%;
-left:30%;
-border:1px solid black;
-background-color:rgb(231, 220, 220) ;
-border-radius: 5px;
-}
-label{
-    margin:0 20px 10px 0;
-}
-#submit{
-    margin:20px;
-    width:80px;
-    height:30px;
-    font-size: 15px;
-}
-form h3{
-    margin:20px;
+    padding:0 10px;
 }
 #signup{
     display:flex;
@@ -130,13 +183,14 @@ form h3{
     justify-content: center;
     text-align: center;
 }
+
 #signup a{
     text-align: center;
     margin:10px;
     color:black;
     font-size: larger;
     text-decoration: none;
-    width:200px;
+    
     height:35px;
     border:1px solid black;
     border-radius: 5px;
@@ -154,10 +208,14 @@ form h3{
     color:black;
     font-size: larger;
     text-decoration: none;
-    width:200px;
+    
     height:35px;
     border:1px solid black;
     border-radius: 5px;
+}
+#signup a{
+    color:white;
+    background-color:rgb(56, 52, 52);
 }
 #signin #submit{
     margin:10px;
@@ -185,4 +243,172 @@ border-radius: 5px;
     align-items: center;
     justify-content: center;
     border:1px solid black;
+}
+/* home page css ends */
+/* sign up as authority and citizen page */
+#sign_up {
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px;
+    height:700px;
+    background-color:grey;
+    margin:0 auto;
+}
+
+
+h3 {
+    text-align: center;
+    color: #3498db;
+    margin-top: 0;
+}
+
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+    font-size: 14px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    margin-top: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+/* sign up as authorities and citizen page ends */
+/* footer css */
+#footer {
+    background: #0c012d;
+    color: white;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.foot {
+    margin: 20px;
+    width: 20%;
+    color: #f1f1f1;
+
+}
+
+#footer h2 {
+    margin: 10px 0;
+    color: red;
+}
+#ac p,section{
+    color:white;
+}
+/* code for report issue page */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        #report_issues {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #f5f5f5;
+        }
+
+        h3 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #555;
+        }
+
+        input[type="text"],
+        input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="text"]:focus,
+        input[type="file"]:focus {
+            border: 1px solid #007BFF;
+            outline: none;
+        }
+
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 15px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+
+/* issue table */
+#issues{
+    
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+      
+      
+      
+      
+}
+#issues td,th {
+    width:300px;
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  #issues th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color:orange;
+    color: white;
+  }
+  
+#issues tr:nth-child(even){background-color: #f2f2f2;}
+
+#issues tr:hover {background-color: #ddd;}
+#issue_table_heading{
+    margin:20px;
+    text-align: center;
 }
