@@ -16,15 +16,17 @@
 <body>
 
     <div id="nav_bar">
+        <div id="logo"><img src="site_logo.png" width="110px" height="110px"></div>
         <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <div id="but">
-     <button onclick="signin()">Sign in</button>
-            <button onclick="signup()">Sign up</button>
+
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <div id="but">
+                <button onclick="signin()">Sign in</button>
+                <button onclick="signup()">Sign up</button>
             </div>
-            </nav>
-            </div>
+        </nav>
+    </div>
     <div id="signin" style="display:none;">
         <a href="sign_in_as_authority.html">Sign In as Citizen</a>
         <a href="sign_in_as_authority.html">Sign In as Authority</a>
@@ -33,70 +35,155 @@
         <a href="sign_up_as_citizen.html">Sign up as Citizen</a>
         <a href="sign_up_as_authority.html">Sign up as Authority</a>
     </div>
-    <div id="intro">
-        <h1 id="welcome"></h1>
+    <div id="intro" >
+        <h1 id="welcome" style="color:black;"></h1>
         <p></p>
     </div>
-    
+
     <div id="wrapper">
 
         <div class="section">
-            <a href="#" class="i1" id="i1" style="background-color: rgb(255, 81, 0);">Report Issues</a><br>
-            <a href="#" class="i1" style="background-color: rgb(255, 255, 0);">Pending Issues</a>
-            <a href="#" class="i1" style="background-color: rgb(8, 250, 8);">Resolved Issues</a>
+            <a href="#signin" class="i1" id="i1" onclick="signin()">Report Issues</a><br>
+            <a href="#" class="i1" id="i2" onclick="filterIssues('pending')">Pending Issues</a>
+            <a href="#" class="i1" onclick="filterIssues('resolved')">Resolved Issues</a>
 
         </div>
-        
+        <div id="map"></div>
         <div id="issues">
             <div class="issue"><img width="300" height="150" src="aii.webp" alt="site_img">
                 <p>Uploaded At:<span></span></p>
                 <p>Description:<span></span></p>
                 <p>Location:<span></span></p>
-                <p>Status:<span></span></p>
+                <p>Status:<span class="status">resolved</span></p>
             </div>
             <div class="issue"><img width="300" height="150" src="aii.webp" alt="site_img">
                 <p>Uploaded At:<span></span></p>
                 <p>Description:<span></span></p>
                 <p>Location:<span></span></p>
-                <p>Status:<span></span></p>
+                <p>Status:<span class="status">pending</span></p>
             </div>
             <div class="issue"><img width="300" height="150" src="aii.webp" alt="site_img">
                 <p>Uploaded At:<span></span></p>
                 <p>Description:<span></span></p>
                 <p>Location:<span></span></p>
-                <p>Status:<span></span></p>
+                <p>Status:<span class="status">pending</span></p>
             </div>
             <div class="issue"><img width="300" height="150" src="aii.webp" alt="site_img">
                 <p>Uploaded At:<span></span></p>
                 <p>Description:<span></span></p>
                 <p>Location:<span></span></p>
-                <p>Status:<span></span></p>
+                <p>Status:<span class="status">resolved</span></p>
+            </div>
+            <div class="issue"><img width="300" height="150" src="aii.webp" alt="site_img">
+                <p>Uploaded At:<span></span></p>
+                <p>Description:<span></span></p>
+                <p>Location:<span></span></p>
+                <p>Status:<span class="status">pending</span></p>
+            </div>
+            <div class="issue"><img width="300" height="150" src="aii.webp" alt="site_img">
+                <p>Uploaded At:<span></span></p>
+                <p>Description:<span></span></p>
+                <p>Location:<span></span></p>
+                <p>Status:<span class="status">pending</span></p>
+            </div>
+            <div class="issue"><img width="300" height="150" src="aii.webp" alt="site_img">
+                <p>Uploaded At:<span></span></p>
+                <p>Description:<span></span></p>
+                <p>Location:<span></span></p>
+                <p>Status:<span class="status">resolved</span></p>
+            </div>
+            <div class="issue"><img width="300" height="150" src="aii.webp" alt="site_img">
+                <p>Uploaded At:<span></span></p>
+                <p>Description:<span></span></p>
+                <p>Location:<span></span></p>
+                <p>Status:<span class="status">pending</span></p>
             </div>
 
         </div>
+        <div id="footer">
+            <div class="foot" id="ac">
+                <h2>About company</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi consequuntur dolores natus corrupti autem
+                    repellat aspernatur, illum cumque aperiam aut.</p>
+                <section>
+                    <h3>contact us-</h3>
+                    Mobile no : 1234567890<br>
+                    Email address : avcdefg123@gmail.com
+                </section>
+            </div>
+           
+           
+          
+        </div>
     
         <script>
-            function signin(){
-                document.getElementById("signin").style.display="flex";
             
-            }
-            function signup(){
-                document.getElementById("signup").style.display="flex";
-            
-            }
-            var i = 0;
-        txt = "Welcome to the Citizen Connect, a website of remote issues...";
-        speed = 65;
+async function signin() {
+    if(await cookieStore.get('PHPSESSID')) {
+        // logim
 
-        function welcome() {
-            if (i < txt.length) {
-                document.getElementById("welcome").innerHTML += txt[i];
-                i++;
+        return;
+    }
 
-            } setTimeout(welcome, speed)
 
+
+
+}
+function signup() {
+    if(document.getElementById("signin").style.display=="flex"){
+        document.getElementById("signin").style.display = "none";
+    }
+    document.getElementById("signup").style.display = "flex";
+
+}
+// function initMap() {
+//     const map = new google.maps.Map(document.getElementById("map"), {
+//         center: { lat: YOUR_LATITUDE, lng: YOUR_LONGITUDE },
+//         zoom: YOUR_ZOOM_LEVEL,
+
+//     });
+// }
+// initMap();
+var i = 0;
+txt = "Welcome to the Citizen Connect, a website of remote issues...";
+speed = 65;
+
+function welcome() {
+    if (i < txt.length) {
+        document.getElementById("welcome").innerHTML += txt[i];
+        i++;
+
+    } setTimeout(welcome, speed)
+
+}
+welcome();
+// jQuery(window).load(function () {
+//     sessionStorage.setItem('status', 'loggedIn')
+// });
+if (sessionStorage.getItem('status') != null){
+
+}
+else {
+    //show validation message
+}
+function filterIssues(status) {
+
+    const issues = document.querySelectorAll('.issue');
+
+    
+    issues.forEach((issue) => {
+        
+        const issueStatus = issue.querySelector('.status').textContent.trim().toLowerCase();
+
+        if (status === 'all' || issueStatus === status) {
+            issue.style.display = 'block';
+        } else {
+            issue.style.display = 'none';
         }
-        welcome();
+    });
+}
+
+
         </script>
 </body>
 
