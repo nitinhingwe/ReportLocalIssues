@@ -2,6 +2,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color:rgb(107, 100, 100);
 }
 
 body {
@@ -16,8 +18,12 @@ body {
 }
 
 .right_align {
-    
+
+    color:black;
+    font-size: larger;
     float: right;
+    margin:10px;
+
 }
 
 .section {
@@ -41,15 +47,142 @@ img{
 }
 .i1{
     margin:5px;
-    width:150px;
+    width:200px;
     height:30px;
     border-radius: 5px;
-    background-color: rgb(13, 248, 13);
+   border:2px solid rgb(202, 180, 180);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    font-size: 20px;
+    text-decoration: none;
+}
+.i1 #i1{
+
 }
 #intro{
     margin:20px;
     padding:10px;
 }
-#nav_bar nav{
-    font-size: large;
+#nav_bar{
+    padding:0 20px;
+    width:100%;
+    height:80px;
+    display: flex;
+    align-items: center;
+    color:black;
+    font-size: medium;
+}
+#nav_bar a{
+    margin:25px;
+    text-decoration: none;
+    color:rgb(24, 23, 23);
+    font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    float:left;
+
+}
+#but{
+    display:flex;
+    position: relative;
+    left:65vw;
+
+}
+#nav_bar button{
+    width:100px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: cyan;
+    margin:5px;
+}
+#sign_up{
+    width:400px;
+    height:300px;
+    font-size: 20px;
+    padding :20px;
+display:flex;
+align-items: center;
+text-align: center;
+justify-content: center;
+position:absolute;
+top:30%;
+left:30%;
+border:1px solid black;
+background-color:rgb(231, 220, 220) ;
+border-radius: 5px;
+}
+label{
+    margin:0 20px 10px 0;
+}
+#submit{
+    margin:20px;
+    width:80px;
+    height:30px;
+    font-size: 15px;
+}
+form h3{
+    margin:20px;
+}
+#signup{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#signup a{
+    text-align: center;
+    margin:10px;
+    color:black;
+    font-size: larger;
+    text-decoration: none;
+    width:200px;
+    height:35px;
+    border:1px solid black;
+    border-radius: 5px;
+}
+#signin{
+    padding:0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#signin a{
+    text-align: center;
+    margin:10px;
+    color:black;
+    font-size: larger;
+    text-decoration: none;
+    width:200px;
+    height:35px;
+    border:1px solid black;
+    border-radius: 5px;
+}
+#signin #submit{
+    margin:10px;
+    width:100px;
+    height:30px;
+    font-size: 20px;
+    color:red;
+}
+#signinpage{
+    width:400px;
+    height:300px;
+    font-size: 20px;
+    padding :20px;
+display:flex;
+align-items: center;
+text-align: center;
+justify-content: center;
+position:absolute;
+top:30%;
+left:30%;
+border:1px solid black;
+background-color:rgb(231, 220, 220) ;
+border-radius: 5px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border:1px solid black;
 }
