@@ -1,0 +1,228 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#nav_bar {
+    margin:10px;
+    background-color: rgba(8, 8, 8, 0.897); 
+    color: #fff; 
+    padding: 10px; 
+}
+#nav_bar a{
+    color:white;
+}
+#logo img {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 16px;
+}
+
+#but button {
+    background-color: #4CAF50; 
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+#but button:hover {
+    background-color: #45a049; 
+}
+#nav_bar{
+    padding:0 20px;
+    width:100%;
+    height:80px;
+    display: flex;
+    align-items: center;
+    color:white;
+    font-size: medium;
+}
+#nav_bar a{
+    margin:25px;
+    text-decoration: none;
+    color:white;
+    font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    float:left;
+
+}
+
+
+  #signin a:hover, #signup a:hover {
+    background-color: #20f7f7;
+  }
+  
+#but{
+    display:flex;
+    position: relative;
+    float:right;
+   flex-wrap: wrap;
+
+}
+#nav_bar button{
+    width:100px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: rgb(66, 64, 64);
+    margin:5px;
+    padding:0 10px;
+}
+#signup{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#signup a{
+    text-align: center;
+    margin:10px;
+    color:black;
+    font-size: larger;
+    text-decoration: none;
+    
+    height:35px;
+    border:1px solid black;
+    border-radius: 5px;
+}
+#signin{
+    padding:0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#signin a{
+    padding:10px;
+    text-align: center;
+    margin:10px;
+    color:rgb(211, 208, 208);
+    font-size: larger;
+    text-decoration: none;
+    background-color: rgb(100, 90, 90);
+    
+    height:35px;
+    border:1px solid black;
+    border-radius: 5px;
+}
+#signup a{
+    padding:10px;
+    color:white;
+    background-color:rgb(56, 52, 52);
+}
+#report_issues {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+}
+
+h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="text"]:focus,
+input[type="file"]:focus {
+    border: 1px solid #007BFF;
+    outline: none;
+}
+
+input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+#issues{
+
+font-family: Arial, Helvetica, sans-serif;
+border-collapse: collapse;
+width: 100%;
+
+
+
+
+}
+#issues td,th {
+width:300px;
+border: 1px solid #ddd;
+padding: 8px;
+}
+#issues th{
+padding-top: 12px;
+padding-bottom: 12px;
+text-align: left;
+background-color:orange;
+color: white;
+}
+
+#issues tr:nth-child(even){background-color: #f2f2f2;}
+
+#issues tr:hover {background-color: #ddd;}
+#issue_table_heading{
+margin:20px;
+text-align: center;
+}
+
+#footer {
+    background: #0c012d;
+    color: white;
+    width: 100%;
+    height: 300px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.foot {
+    margin: 20px;
+    width: 20%;
+
+}
+#footer h2{
+margin:10px 0;
+color:red;
+}
