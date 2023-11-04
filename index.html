@@ -14,26 +14,39 @@
 </head>
 
 <body>
-    <div class="head">
-        <h1>Welcome To Citizen Connect</h1>
+
+    <div id="nav_bar">
+        <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <div id="but">
+     <button onclick="signin()">Sign in</button>
+            <button onclick="signup()">Sign up</button>
+            </div>
+            </nav>
+            </div>
+    <div id="signin" style="display:none;">
+        <a href="sign_in_as_authority.html">Sign In as Citizen</a>
+        <a href="sign_in_as_authority.html">Sign In as Authority</a>
+    </div>
+    <div id="signup" style="display:none;">
+        <a href="sign_up_as_citizen.html">Sign up as Citizen</a>
+        <a href="sign_up_as_authority.html">Sign up as Authority</a>
     </div>
     <div id="intro">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sunt, cum a eaque doloremque veniam id voluptatum porro explicabo atque minus dolores unde distinctio nobis debitis molestias error illo accusantium libero fuga laborum! Ea officia porro explicabo doloremque at nisi blanditiis tenetur laudantium fugit ex qui voluptates sint impedit atque culpa eligendi, quisquam praesentium autem, itaque ratione molestias. Asperiores sed placeat ratione quas, at beatae voluptate ducimus. Pariatur unde excepturi sunt labore libero quam necessitatibus ut voluptas! Ipsam pariatur quibusdam maxime, possimus, nobis itaque quasi magnam vel eius culpa illo dolorem accusamus illum repellat minus ipsa fugit eligendi nisi eum.</p>
+        <h1 id="welcome"></h1>
+        <p></p>
     </div>
-    <div id="nav_bar">
-        <nav><a href="index.html">Home</a></nav>
-        <nav class="right_align"> <button onclick="sign_in()">Sign in</button><br>
-            <button onclick="sign_up()">sign up</button>
-        </nav>
-    </div>
+    
     <div id="wrapper">
-        
+
         <div class="section">
-            <button  class="i1"><a href="#">Report Issues</a></button><br>
-            <button  class="i1"><a href="#">Pending Issues</a></button><br>
-            <button  class="i1"><a href="#">Resolved Issues</a></button>
+            <a href="#" class="i1" id="i1" style="background-color: rgb(255, 81, 0);">Report Issues</a><br>
+            <a href="#" class="i1" style="background-color: rgb(255, 255, 0);">Pending Issues</a>
+            <a href="#" class="i1" style="background-color: rgb(8, 250, 8);">Resolved Issues</a>
 
         </div>
+        
         <div id="issues">
             <div class="issue"><img width="300" height="150" src="aii.webp" alt="site_img">
                 <p>Uploaded At:<span></span></p>
@@ -61,6 +74,30 @@
             </div>
 
         </div>
+    
+        <script>
+            function signin(){
+                document.getElementById("signin").style.display="flex";
+            
+            }
+            function signup(){
+                document.getElementById("signup").style.display="flex";
+            
+            }
+            var i = 0;
+        txt = "Welcome to the Citizen Connect, a website of remote issues...";
+        speed = 65;
+
+        function welcome() {
+            if (i < txt.length) {
+                document.getElementById("welcome").innerHTML += txt[i];
+                i++;
+
+            } setTimeout(welcome, speed)
+
+        }
+        welcome();
+        </script>
 </body>
 
 </html>
