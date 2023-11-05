@@ -43,7 +43,8 @@ if(isset($_POST['name'])){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Citizen Sign up page</title>
-    <link href="style.css" rel="stylesheet">
+    <link href="../css files/sign_up_as_authority.css" rel="stylesheet">
+</head>
 </head>
 <body>
     
